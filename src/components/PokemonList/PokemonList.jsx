@@ -46,7 +46,7 @@ setPokemonList(res);
             {(isLoading) ? 'Loading....' : 
             pokemonList.map((p) => <Pokemon name= {p.name} image = {p.image} key = {p.id} />)}
         </div>
-      </>
+      J</>
       )
 }
 
