@@ -40,13 +40,22 @@ setPokemonList(res);
     },[]);
     
       return(
-      <>
+   
         <div className="pokemon-List-wrapper">
-           <div> Pokenmon List</div>
+           
+           <div className="pokemon-wrapper">
+
+           
             {(isLoading) ? 'Loading....' : 
             pokemonList.map((p) => <Pokemon name= {p.name} image = {p.image} key = {p.id} />)}
         </div>
-      J</>
+        <div className="controls">
+          <button> Prev</button>
+          <button>Next</button>
+
+        </div>
+        </div>
+    
       )
 }
 
